@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>本节介绍穿越机组后需要进行的参数设置步骤 - 穿越机教学</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                
+                    <h2>穿越机入门指南</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/drone/index.html">首页</a></li>
+<li class=""><a  href="/drone/readme.html">关于</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/drone/./whats_drone/whats_drone.html"><span class="label">什么是穿越机</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./drone_parts/drone_parts.html"><span class="label">穿越机的基本组成</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./buy_drone_parts/buy_drone_parts.html"><span class="label">穿越机的配件选购</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./drone_equipment/drone_equipment.html"><span class="label">穿越机所需的设备和工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/drone_assembly.html"><span class="label">穿越机的组装</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/drone/./drone_debug/drone_debug.html"><span class="label">穿越机的调试、调参</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./rc_use/rc_use.html"><span class="label">遥控器的基本使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/vrx_use.html"><span class="label">图传接收器的基本使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./battery/battery.html"><span class="label">电池的基本使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/charger_use.html"><span class="label">充电器的基本使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/./install_servo/install_servo.html"><span class="label">安装舵机</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/clean.html"><span class="label">维护保养</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/drone/about.html"><span class="label">总体说明</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+<h3>穿越机的调试、调参</h3>
+
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2025-01-03">
+                                    2025-01-03
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+
+<link rel="stylesheet" type="text/css" href="../main_style.css">
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("toggleButton");
+        const content = document.getElementById("content");
+
+        toggleButton.addEventListener("click", function () {
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+                content.classList.add("visible");
+                toggleButton.textContent = "收起";
+            } else {
+                content.classList.remove("visible");
+                content.classList.add("hidden");
+                toggleButton.textContent = "点击查看各个模式的功能描述";
+            }
+        });
+    });
+</script>
+<h1>本节介绍穿越机组后需要进行的参数设置步骤</h1>
+
+<h2>预先准备</h2>
+<ul>
+    <h3>安装和打开BF固件的配置器程序，将飞控通过USB数据线连接至计算机。</h3>
+    <h3>点击右上角的连接</h3>
+    <img src="SJFGIF631.png"/>
+</ul>
+<h2>开始配置</h2>
+<ul>
+    <h3>进入设置页，将飞机完全放平，点击校准加速度计。</h3>
+    <h3>进入端口页，根据飞控官方给出的接线图打开端口并选择对应的外设（一般来说成品飞控已经在工厂内就已经把端口按接线图打开了）。</h3>
+    <h3>进入电机页，选择机架类型QUAD X，电机协议选择DSHOT600，如果电调不支持可选择DSHOT300。</h3>
+    <img src="SJFGIF237.png"/>
+    <h3>插上电池，按照配置器内的指引设置电机顺序和电机转向，电机转向要和示意图中相同。如果软件内无法更改电机转向，在电调上把该电机三条线中任意两条互换即可。</h3>
+    <h3>进入接收机页，选择串行接收机，然后选择CRSF协议。拨动遥控器的开关按钮观察通道值是否变化，如果有变化说明设置正确。</h3>
+    <img src="SJFGIF701.png"/>
+    <h3>进入模式页，设置模式。</h3>
+    <ul>
+        <h4>找到想要设置的模式。</h4>
+        <h4>点击“添加范围”按钮。</h4>
+        <h4>选择“自动”。</h4>
+        <img src="SJFGIF167.png"/>
+        <h4> 在遥控器上扳动想要控制选定模式的开关，软件会自动选择该开关对应的通道。</h4>
+        <h4>拖动黄色的进度条，当下方的小黄点在进度条范围内时，该模式为激活状态，同时标题处变成黄色。</h4>
+        <button id="toggleButton"><strong>点击查看各个模式的功能描述</strong></button>
+
+        <div id="content" class="hidden">
+            <table border="1" cellpadding="10px">
+                <thead>
+                <tr>
+                    <th>英文</th>
+                    <th>中文</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>ACRO/RATE</td>
+                    <td>手动</td>
+                    <td>没有任何辅助的飞行模式，无姿态限制</td>
+                </tr>
+                <tr>
+                    <td>ARM</td>
+                    <td>锁定/解锁</td>
+                    <td>使电机开始旋转</td>
+                </tr>
+                <tr>
+                    <td>ANGLE</td>
+                    <td>自稳</td>
+                    <td>摇杆回中时，穿越机可自动回至水平状态，且对飞行姿态进行了限制。</td>
+                </tr>
+                <tr>
+                    <td>HORIZON</td>
+                    <td>半自稳/地平线</td>
+                    <td>摇杆比例未超过设定值时，穿越机按照自稳模式飞行。摇杆比例如果过大，穿越机就会像手动模式一样出现翻滚。<br><strong
+                            style="color: red">如果自稳模式和半自稳模式均未开启，则为手动模式</strong>
+                    </td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>ANTI GRAVITY</td>-->
+                <!--<td>反重力</td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>MAG</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>PREARM</td>
+                    <td>预解锁</td>
+                    <td>开启预解锁的情况下才可以解锁</td>
+                </tr>
+                <tr>
+                    <td>HEADFREE</td>
+                    <td>无头模式/简单模式</td>
+                    <td>方向摇杆的前进永远对应解锁时的机头方向</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>头调整模式/超级简单模式</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>CAMSTAB</td>
+                    <td>相机云台</td>
+                    <td>1、2号舵机会自动使相机保持当前角度</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>PASSTHRU</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>BEEPER</td>
+                    <td>鸣叫</td>
+                    <td>飞机通过电机和蜂鸣器发出响声</td>
+                </tr>
+                <tr>
+                    <td>BEEPERMUTE</td>
+                    <td>静音</td>
+                    <td>关闭鸣叫声</td>
+                </tr>
+                <tr>
+                    <td>LEDLOW</td>
+                    <td>关闭LED</td>
+                    <td></td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>CALIB</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>OSD</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>TELEMETRY</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>SERVO1</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>SERVO2</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>SERVO3</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>BLACKBOX</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>FAILSAFE</td>
+                    <td>失控保护</td>
+                    <td>主动进入失控保护模式</td>
+                </tr>
+                <tr>
+                    <td>AIRMODE</td>
+                    <td>空中模式</td>
+                    <td>0油门时在空中保持姿态</td>
+                </tr>
+                <tr>
+                    <td>3D</td>
+                    <td>3D模式</td>
+                    <td>神仙才玩</td>
+                </tr>
+                <tr>
+                    <td>FPV ANGLE MIX</td>
+                    <td>FPV角度混合</td>
+                    <td>辅助转弯用途</td>
+                </tr>
+                <tr>
+                    <td>BLACKBOX ERASE</td>
+                    <td>黑匣子擦除</td>
+                    <td></td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>CAMERA CONTROL 1</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>CAMERA CONTROL 2</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>CAMERA CONTROL 3</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>FLIP OVER AFTER CRASH</td>
+                    <td>反乌龟模式</td>
+                    <td>炸机后翻身，需要支持Dshot的电调，以及允许解锁角度设置为180。</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>BEEP GPS SALELLITE COUNT</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>VTX PIT MODE</td>
+                    <td>图传维修模式</td>
+                    <td>使图传进入维修模式，大幅度降低发射功率</td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>USER1</td>-->
+                <!--<td>控制一个端口的高低电平</td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>USER2</td>-->
+                <!--<td>控制一个端口的高低电平</td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>USER3</td>-->
+                <!--<td>控制一个端口的高低电平</td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>USER4</td>-->
+                <!--<td>控制一个端口的高低电平</td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                <!--<td>PID AUDIO</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td>PARALYZE</td>
+                    <td>瘫痪模式</td>
+                    <td>一旦触发，只有重新上电才能使飞机响应飞手操作。</td>
+                </tr>
+                <tr>
+                    <td>GPS RESCUE</td>
+                    <td>GPS救援</td>
+                    <td>通过定位功能使飞机自动飞回来，有能力重新控制飞机后应该关闭此模式接管飞机的控制权。<strong style="color: red">不可当作自动返航使用。</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ACRO TRAINER</td>
+                    <td>手动训练模式</td>
+                    <td>带姿态限制的手动模式</td>
+                </tr>
+                <tr>
+                    <td>DISABLE VTX</td>
+                    <td>禁用图传</td>
+                    <td></td>
+                </tr>
+                <!--<tr>-->
+                <!--<td>LAUNCH CONTROL</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--</tr>-->
+                </tbody>
+            </table>
+        </div>
+    </ul>
+    <h3>设置好所需的模式后点击保存。</h3>
+    <h3>将上述项目设置好后，可装好螺旋桨开始试飞。</h3>
+</ul>
+
+
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                    </div>
+                    <div id="next">
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="abcde" href="http://127.0.0.1">Generated by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/search/search_main.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/static/js/live.js"></script>
+    
+</body>
+
+</html>
