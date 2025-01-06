@@ -9,7 +9,6 @@
 
 @media screen and (max-width: 900px) {
     #home_page h1 {
-        color: #eb4848;
+        color: #fafc47;
     }
 }
-

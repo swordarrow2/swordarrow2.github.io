@@ -1,0 +1,29 @@
+{% extends "article.html" %}
+
+{% block title %}
+<h1>安装舵机</h1>
+{% endblock %}
+
+{% block content %}
+<strong style="color: red">本页的命令均为举例，不要照抄，按照你自己的飞控的实际情况替换掉命令中的端口等参数。</strong>
+<strong style="color: red">所有命令输入完毕后按回车</strong>
+<h2>确保你的飞控固件支持舵机。</h2>
+<h2>将舵机正极焊接在5V焊盘，负极焊接在GND焊盘，信号线焊接在多余的电机焊盘上。</h2>
+<h2>飞机连接配置器，进入CLI页面。</h2>
+<h2>输入resource找到焊接的电机焊盘。例如焊接在<strong style="color: blue">5</strong>号电机焊盘，则寻找MOTOR <strong
+        style="color: blue">5</strong>。</h2>
+<img src="SJFGIF447.png"/>
+<h2>MOTOR <strong style="color: blue">5</strong>所在位置为<strong style="color: green">A15。</strong></h2>
+<h2>输入resource MOTOR <strong style="color: blue">5</strong> none释放电机资源。</h2>
+<img src="SJFGIF389.png"/>
+<h2>输入resource SERVO <strong style="color: deeppink">1</strong> <strong style="color: green">A15</strong>分配舵机资源。</h2>
+<img src="SJFGIF678.png"/>
+<h2>输入save保存修改</h2>
+<h2>进入接收机页面，确认想用来控制舵机的通道。例如想用<strong style="color: greenyellow">AUX10</strong>通道来控制<strong
+        style="color: deeppink">1</strong>号舵机。</h2>
+<h2>进入舵机页面。将SERVO <strong style="color: deeppink">1</strong>后面的<strong style="color: greenyellow">A10</strong>勾上，保存设置。此时，选定的通道已经能控制舵机。<br>
+    如果下方代表舵机的读数受控制但舵机不动，则尝试另外的电机口。</h2>
+<img src="SJFGIF172.png"/>
+<h2>使用后面的方向和rate选项来设置舵机的行程。</h2>
+<h2>保存设置。</h2>
+{% endblock %}

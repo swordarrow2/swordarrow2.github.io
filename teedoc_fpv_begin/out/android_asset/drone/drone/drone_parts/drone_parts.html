@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="">
+    
+    
+    <meta name="description" content="">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <script src="/android_asset/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/android_asset/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/android_asset/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/search/style.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/android_asset/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>穿越机的基本组成 - 穿越机教学</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/android_asset/">
+                
+                
+                    <h2>穿越机入坑指南</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class=""><a  href="/android_asset/index.html">首页</a></li>
+<li class=""><a  href="/android_asset/drone/about.html">关于</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul><ul class="nav_plugins"><li><a id="search"><span class="icon"></span><span class="placeholder">搜索</span>
+                            <div id="search_hints">
+                                <span id="search_input_hint">输入关键词，多关键词空格隔开</span>
+                                <span id="search_loading_hint">正在加载，请稍候。。。</span>
+                                <span id="search_download_err_hint">下载文件失败，请刷新重试或检查网络</span>
+                                <span id="search_other_docs_result_hint">来自其它文档的结果</span>
+                                <span id="search_curr_doc_result_hint">当前文档搜索结果</span>
+                            </div></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/android_asset/drone/normal_nouns.html"><span class="label">常见的缩写和短语</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">穿越机基本知识</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/android_asset/drone/drone/whats_drone/whats_drone.html"><span class="label">什么是穿越机</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/android_asset/drone/drone/drone_parts/drone_parts.html"><span class="label">穿越机的基本组成</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/drone/buy_drone_parts/buy_drone_parts.html"><span class="label">穿越机的配件选购</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/drone/drone_equipment/drone_equipment.html"><span class="label">穿越机所需的设备</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/drone/drone_tool/drone_tool.html"><span class="label">穿越机所需的工具</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/drone/drone_assembly/drone_assembly.html"><span class="label">穿越机的组装</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/drone/drone_debug/drone_debug.html"><span class="label">穿越机的调试、调参</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/android_asset/drone/rc_use/rc_use.html"><span class="label">遥控器基本知识</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/vrx_use/vrx_use.html"><span class="label">图传接收器基本知识</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/battery/battery.html"><span class="label">电池基本知识</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/charger_use/charger_use.html"><span class="label">充电器基本知识</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">安装额外的设备</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/android_asset/drone/install/install_servo/install_servo.html"><span class="label">安装舵机</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/install/install_external_rf/install_external_rf.html"><span class="label">安装高频头</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/android_asset/drone/clean/clean.html"><span class="label">维护保养</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/no_translate.html?ref=clean.html&from=/drone/clean.html"><span class="label">BetaFlight固件的详细使用</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/android_asset/drone/about.html"><span class="label">总体说明</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+<h1>穿越机的基本组成</h1>
+
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                                <span class="article_date" title="最后修改日期： 2025-01-07">
+                                    2025-01-07
+                                </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+<div id="list">
+    <strong>一架穿越机主要由以下零部件组成:</strong>
+    <ul>
+        <li><a href="#rack">机架</a></li>
+        <li><a href="#fc">飞行控制器</a></li>
+        <li><a href="#esc">电子调速器</a></li>
+        <li><a href="#aio">AIO飞控</a></li>
+        <li><a href="#motor">电机</a></li>
+        <li><a href="#airscrew">桨叶</a></li>
+        <li><a href="#vtx">图传</a></li>
+        <li><a href="#camera">摄像头</a></li>
+        <li><a href="#receiver">接收机</a></li>
+    </ul>
+    <strong>同时，可根据喜好和需求安装以下零部件:</strong>
+    <ul>
+        <li><a href="#servo">舵机</a></li>
+        <li><a href="#gnss">定位模块</a></li>
+        <!--<li><a href="#flow">光流计</a></li>-->
+        <!--<li><a href="#rangefinder">测距机</a></li>-->
+        <!--<li><a href="#airspeed">空速计</a></li>-->
+        <li>云台</li>
+        <li>分电板</li>
+        <li>光流计</li>
+        <li>测距机</li>
+        <li>空速计</li>
+        <li>其它配件</li>
+    </ul>
+</div>
+<div id="items">
+    <h2 id="rack">机架</h2>
+    <img src="race.png">
+    <h3 id="way">用途</h3>
+    机架就像节肢动物的外骨骼一样，主要对穿越机起支撑和保护的作用。市面上的机架大多是使用碳纤维制造的，重量轻，强度大。主要分为竞速和花飞两种类型。竞速机架机身一般偏小，机臂细，动力足，侧重于速度快。花飞机架可容纳较多的电子元件，有更多空间可以安装额外的功能模块，一般侧重于长续航。
+    <h3 id="size">尺寸</h3>
+    机架大小用"轴距"来表示，轴距就是对角的两个电机旋转轴之间的间距。
+    <br>
+    但现在更多的人喜欢叫“X寸机”，不过这里的“寸”指的不是机架的大小，而是其匹配的螺旋桨的大小。
+    <br>
+    举例来说，一架飞机是为了飞5寸桨而设计的，他就会被称为5寸机。目前，5寸和7寸机架是用户数量最多的。下面为轴距和尺寸的关系。
+    <br><br>
+    <table border="1" cellpadding="10px">
+        <thead>
+        <tr>
+            <th>机架轴距</th>
+            <th>桨叶尺寸</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>150mm及以下</td>
+            <td>3寸及以下</td>
+        </tr>
+        <tr>
+            <td>180mm左右</td>
+            <td>4寸</td>
+        </tr>
+        <tr>
+            <td>210mm左右</td>
+            <td>5寸</td>
+        </tr>
+        <tr>
+            <td>250mm左右</td>
+            <td>6寸</td>
+        </tr>
+        <tr>
+            <td>350mm左右</td>
+            <td>7寸</td>
+        </tr>
+        <tr>
+            <td>450mm及以上</td>
+            <td>8寸及以上</td>
+        </tr>
+        </tbody>
+    </table>
+    <h3 id="type">类型</h3>
+    <div style="padding-left: 2em">
+        穿越机机架有正X、长X、涵道、Hybrid、X8、Y3、Y6等类型，以下仅对常见的类型做出说明
+        <h4 id="type1">正X型机架</h4>
+        描述：机架的每个轴之前的夹角都呈垂直90°，机臂长度一样。
+        <br>
+        特性：性能均衡，重心集中，这种机架每个面的旋转力距都相等，飞起来比较平稳，操作感强。
+        <h4 id="type2">宽X型机架</h4>
+        描述：如果左右两边电机的间距大于前后电机间距，叫宽X。
+        <br>
+        特性：俯仰灵敏、横滚柔和，适合花飞。
+        <h4 id="type3">长X型机架</h4>
+        描述：如果左右两边电机的间距小于前后电机间距，叫长X。
+        <br>
+        特性：俯仰柔和、横滚灵敏，适合高速比赛。
+        <h4 id="type4">涵道机架</h4>
+        描述：一般也称为“圈圈机”，用圈圈来形成一个风流动的管道，可以提高升力，同时也增加的重量(这里是需要一个权衡)。
+        <br>
+        特性：螺旋桨外部有圆圈做保护，可有效降低炸机损失。同时，若撞到人，圆圈也可以在一定程度上保护人体不受伤害。
+    </div>
+
+    <h2 id="fc">飞行控制器</h2>
+    <br>
+    <img src="fc.png">
+    <br>
+    飞行控制器（Flight Control），简称飞控（FC）。 是飞行器行为控制的核心部件，飞行器的姿态控制、数据回传等都是由飞控进行控制。<br>
+    目前，主流的穿越机飞控均是以STM32为主控芯片，性能由低到高主要为F4系列,F7系列,H7系列。最近市面上也出现了以国产AT32芯片为主控的穿越机飞控，其性能介于STM32F4和STM32F7之间。<br>
+    一般来说主控性能越高飞行就越稳定。对于新手来说，STM32F4系列飞控已经完全够用。
+
+    <h2 id="esc">电子调速器</h2>
+    <br>
+    <img src="one_esc.png">
+    <img src="four_in_one_esc.png">
+    <br>
+    <div style="padding-left: 2em">
+        电子调速器（Electronic Speed Controller），简称电调（ESC）。
+        是穿越机动力的控制核心。按控制的电机类型可分为有刷电调和无刷电调两大类，本文档中仅对5寸穿越机常见的无刷电调做出说明，提到的电调默认为无刷电调。<br>
+        <h3 id="esc_1">按集成程度可分为：分体式电调，四合一电调。</h3>
+        <p>
+            分体式电调也称为单体电调，即一块电路板上仅有一个电调，仅能控制一个电机。四合一电调则是一块电路板上集成了4个电调，可控制4个电机。<br>
+            四合一电调在组装方便等特性上远优于分体电调，已经成为穿越机电调的主流。</p>
+
+        <h3 id="esc_2">按承受电压可分为：1S，2S，3S，4S等。</h3>
+        电压会直接影响电机的最大转速，意味着电压越高，最大动力越高。S指的是电池串联数量，后面电池章节会做出说明。<br>
+        现在的穿越机电调一般为2-6S的宽电压电调，所以基本不会遇到电池电压和电调不匹配的情况。
+
+        <h3 id="esc_3">按承受电流可分为：20A、45A、60A等。</h3>
+        标定的是额定电流，即能够在此电流下仍然稳定工作。电调的承受电流直接影响电机能发挥出多少性能，电机载荷越大，电流越大。若电调承受电流能力不足，则会烧毁。
+
+        <h3 id="esc_4">按电调固件可分为：Bluejay、BLHeli_S、AM32等。</h3>
+        不同的固件因为控制逻辑不同，所以手感会略有差异。但在新手阶段可直接无视。
+
+        <h3 id="esc_5">按协议可分为：PWM、oneshot、dshot等。</h3>
+        需要选择飞控和电调都支持的协议才能正常控制电机，在支持dshot的情况下优先选择dshot。
+    </div>
+
+    <h2 id="aio">AIO飞控</h2>
+    一种将飞控和四合一电调集成在一起的电路板。优势是体积小，缺点是功率一般偏小。
+    <h2 id="motor">电机</h2>
+    <br>
+    <img src="motor.png">
+    <br>
+    电机直接带动螺旋桨，为穿越机提供动力。
+    可分为有刷电机和无刷电机两大类，本文档中仅对穿越机常见的无刷电机做出说明，提到的电机默认为无刷电机。<br>
+    <ul>
+        <li>按尺寸可分为：2515，2306，2808等。</li>
+        尺寸指的是电机转子的尺寸。
+        <li>按转速可分为：900KV，1800KV，2450KV等。</li>
+        KV的含义是电压每增加1V，电机增加的转速。如900KV的电机在1V电压下最大转速为每分钟900圈，在2V电压下为每分钟1800圈。
+    </ul>
+
+    <h2 id="airscrew">桨叶</h2>
+    <br>
+    <img src="airscrew.png">
+    <br>
+    利用推动空气的反作用力为穿越机提供动力的部件。
+
+    <h2 id="vtx">图传</h2>
+    <br>
+    <img src="cvbs_vtx.png">
+    <img src="dji_vtx.png">
+    <br>
+    图传将摄像头拍摄的画面回传至地面，飞手通过显示器或眼镜等观看画面。
+    主要分为模拟图传和数字图传两类<br>
+    <ol>
+        <li>模拟图传</li>
+        使用CVBS信号，电路结构简单，成本低，配对简单，画面延迟低，但是画面质量较低。
+        <li>数字图传</li>
+        画面质量高，但摄像头和画面接收装置一般仅能和自家产品配对且价格高昂。例如DJI O3图传售价约1200CNY，足够买10个中上水平的模拟图传。且仅能和自家的飞行眼镜配对，和其他品牌的飞行眼镜无法配对。
+    </ol>
+
+    <h2 id="camera">摄像头</h2>
+    摄像头负责拍摄画面并传送至图传，主要分为模拟和数字两类<br>
+    <ol>
+        <li>模拟摄像头</li>
+        使用CVBS信号，结构简单，成本低，兼容性好，但是画面质量较低。
+        <li>数字摄像头</li>
+        画面质量高，但一般仅能连接自家的图传。
+    </ol>
+
+    <h2 id="receiver">接收机</h2>
+    <br>
+    <img src="receiver.png">
+    <br>
+    用于接收遥控信号并转发至飞控。<br>
+    <ol>
+        <li>按无线协议可分为：ELRS接收机、SBUS接收机等</li>
+        现在最常用的是ELRS接收机，选购时应优先选择。
+        <li>按和飞控的通信方式可分为：串口接收机、SPI接收机、PPM接收机等</li>
+        应优先选择串口接收机，ELRS接收机就是串口接收机的一种。
+        <li>按无线频率可分为：2.4G接收机、915M接收机等</li>
+        应优先选择2.4G接收机。 <strong style="color: red">915M频段在国内不合法。</strong>
+    </ol>
+
+    <h2 id="servo">舵机</h2>
+    <br>
+    <img src="servo.png">
+    <br>
+    舵机(Servo)是一种在程序的控制下，可在一定范围内连续改变输出轴角度并保持的伺服电机。<br>
+    <ol>
+        <li>按旋转角度可分为：180度舵机、360度舵机等，常用180度舵机。</li>
+        <li>按内部控制逻辑可分为：模拟舵机、数字舵机。</li>
+        模拟舵机的控制电路为模拟电路，需要一直发送控制信号才能转到指定位置；响应速度慢；数字舵机的控制电路加入了微控制器，只需要发送一次目标信号即可到达指定位置；有些还有信息反馈等功能；
+        <li>按材质可分为：塑料齿舵机、金属齿舵机等。</li>
+        塑料齿舵机重量轻，价格便宜，但扭矩较小；金属齿舵机结实耐用，扭矩更大，但价格更贵。
+        <li>按控制接口可分为：PWM舵机、总线舵机等。</li>
+        PWM舵机是传统航模控制方式，控制简单，MCU都可以产生控制；总线舵机采用总线通信方式进行控制，支持信息反馈，控制信号有所优化，使用在控制精度高的场合；
+    </ol>
+
+    <h2 id="gnss">定位模块</h2>
+    <br>
+    <img src="gnss.png">
+    <br>
+    利用卫星定位系统获得自身位置的外设。虽然一般称为GPS，但现在很多模块还可以使用北斗、伽利略等卫星定位系统。<br>
+</div>
+
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/android_asset/drone/drone/whats_drone/whats_drone.html">
+                            <span class="icon"></span>
+                            <span class="label">什么是穿越机</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/android_asset/drone/drone/buy_drone_parts/buy_drone_parts.html">
+                            <span class="label">穿越机的配件选购</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a></a><ul><li><a target="_blank" href="/android_asset/#"></a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a target="abcde" href="http://127.0.0.1">Generated by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/android_asset/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/android_asset/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/android_asset/static/js/theme_default/main.js"></script>
+    
+        <script src="/android_asset/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/android_asset/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/android_asset/static/js/search/search_main.js"></script>
+    
+        <script src="/android_asset/static/js/custom.js"></script>
+    
+        <script type="text/javascript" src="/android_asset/static/js/live.js"></script>
+    
+</body>
+
+</html>
